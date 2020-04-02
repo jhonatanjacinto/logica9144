@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>Soma de Valores</h1>
+
+<script src="js/pegaNumero.js"></script>
+
+<script>
+
+    var inicial = pegaInt('Valor inicial:')
+    var final = pegaInt('Valor final:')
+    var acumulador = 0
+
+    document.write('Intervalo: ')
+
+    for (var contagem = inicial; contagem <= final; contagem++)
+    {
+        document.write(`${contagem} `)
+        acumulador += contagem
+    }
+
+    document.write(`<br> O resultado da soma é: ${acumulador}`)
+
+
+
+
+</script>

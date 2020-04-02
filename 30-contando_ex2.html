@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<h1>Contando | Exemplo 2</h1>
+
+Número: <br>
+<input type="number" id="campoNumero">
+<button onclick="contar()">
+    Contar
+</button>
+<p id="mostrador">
+    Sua contagem será exibida aqui :)
+</p>
+
+<script>
+
+    function contar()
+    {
+        var numero = campoNumero.value;
+        mostrador.innerHTML = ('Contando...<br>')
+
+        for (var contagem = 0; contagem <= numero; contagem++)
+        {
+            mostrador.innerHTML += (`${contagem}...<br>`)
+        }
+
+        mostrador.innerHTML += ('Fim!!!')
+    }
+
+</script>

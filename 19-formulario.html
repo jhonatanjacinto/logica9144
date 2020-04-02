@@ -19,9 +19,13 @@ Data de Nascimento: <br>
 <input type="text" id="campoDataNascimento">
 <br><br>
 
+<input type="checkbox" id="campoSouCardiaco"> Tenho problemas cardíacos
+<br><br>
+
 <button onclick="cadastrar()">Cadastrar</button>
 
 <script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
+<script src="js/libIdade.js"></script>
 
 <script>
 
@@ -34,6 +38,22 @@ Data de Nascimento: <br>
         var altura = campoAltura.value 
         var peso = campoPeso.value 
         var dataNascimento = campoDataNascimento.value
+        var dataPedacos = dataNascimento.split("/")
+        var souCardiaco = campoSouCardiaco.checked
+        var frase
+
+        console.log(dataNascimento) // string "12/04/1991"
+        console.log(dataPedacos) // array ["12", "04", "1991"]
+
+        // passamos o dia, o mês e o ano de nascimento para a função calcular a idade
+        var idade = calculaIdade(dataPedacos[0], dataPedacos[1], dataPedacos[2])
+
+        if (souCardiaco == true) {
+            frase = 'PRECISA DE ACOMPANHAMENTO MÉDICO'
+        }
+        else {
+            frase = 'NÃO PRECISA DE ACOMPANHAMENTO MÉDICO'
+        }
 
         document.write(`
             Seu cadastro foi realizado com sucesso! <br>
@@ -42,6 +62,9 @@ Data de Nascimento: <br>
             - Peso: ${peso} kg <br>
             - Altura: ${altura} m <br>
             - Data de Nascimento: ${dataNascimento} <br>
+            - Idade: ${idade} anos <br>
+            <hr>
+            ${frase}
 
             <br>
             <button onclick="print()">
