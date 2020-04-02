@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<h1>Cadastramento | Academia Caelum</h1>
+
+<p>Por favor, preencha o formulário abaixo para realizar seu cadastro:</p>
+
+Nome: <br>
+<input type="text" id="campoNome">
+<br><br>
+
+Altura: <br>
+<input type="text" id="campoAltura">
+<br><br>
+
+Peso: <br>
+<input type="text" id="campoPeso">
+<br><br>
+
+Data de Nascimento: <br>
+<input type="text" id="campoDataNascimento">
+<br><br>
+
+<button onclick="cadastrar()">Cadastrar</button>
+
+<script src="https://unpkg.com/vanilla-masker@1.1.1/build/vanilla-masker.min.js"></script>
+
+<script>
+
+    // 00/00/0000
+    VMasker(campoDataNascimento).maskPattern('99/99/9999')
+
+    function cadastrar()
+    {
+        var nome = campoNome.value
+        var altura = campoAltura.value 
+        var peso = campoPeso.value 
+        var dataNascimento = campoDataNascimento.value
+
+        document.write(`
+            Seu cadastro foi realizado com sucesso! <br>
+            Aqui estão suas informações: <br>
+            - Nome: ${nome} <br>
+            - Peso: ${peso} kg <br>
+            - Altura: ${altura} m <br>
+            - Data de Nascimento: ${dataNascimento} <br>
+
+            <br>
+            <button onclick="print()">
+                Imprimir Informações
+            </button>
+        `)
+    }
+
+</script>

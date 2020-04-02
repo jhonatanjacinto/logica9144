@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<h1>Cálculo | Custo Final do Carro</h1>
+<script>
+
+    var custo_fabrica = parseFloat(prompt('Digite o custo de fábrica:').replace(',', '.'))
+    var custo_distribuidor = custo_fabrica * 0.28
+    var custo_impostos = custo_fabrica * 0.45
+    var custo_final = custo_fabrica + custo_distribuidor + custo_impostos
+    document.write(`
+        O custo final do carro é: R$ ${custo_final.toFixed(2).replace('.', ',')}
+    `)
+
+</script>

@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<h1>Nota aluno</h1>
+
+<script src="js/pegaNumero.js"></script>
+
+<script>
+
+    var nota1 = pegaFloat('Informe a 1ª nota:')
+    var nota2 = pegaFloat('Informe a 2ª nota:')
+    var media = (nota1 + nota2) / 2
+
+    document.write(`Sua média final é: ${media.toFixed(1).replace('.', ',')} <br>`)
+
+    if (media >= 7) {
+        document.write('Você está aprovado!')
+    }
+    else {
+        document.write('Você está reprovado!')
+    }
+
+</script>

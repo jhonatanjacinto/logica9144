@@ -1,0 +1,14 @@
+O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
+distribuidor e dos impostos (ambos aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor.
+
+Informações necessárias:
+    1) Custo de Fábrica (float)
+    2) percentual do distribuidor = 28%
+    3) percentual dos impostos = 45%
+
+Passo a passo:
+    1) Pedir o custo de fábrica 
+    2) Calcular o custo com distribuidor = custo de fabrica * 0.28
+    3) Calcular o custo com impostos = custo de fabrica * 0.45
+    4) Calcular custo final consumidor = custo de fabrica + custo distribuidor + custo impostos 
+    5) Exibir o custo final na tela.

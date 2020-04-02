@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<h1>Produto com Desconto</h1>
+<script>
+
+    var nomeProduto = prompt('Informe o nome do Produto')
+    var precoUnitario = prompt('Informe o preço:').replace(',', '.')
+    var desconto = prompt('Informe o desconto:').replace(',', '.')
+    var precoFinal = precoUnitario - desconto
+    document.write(`
+        Nome do Produto: ${nomeProduto} <br>
+        Preço Final: R$ ${precoFinal.toFixed(2).replace('.', ',')}
+    `)
+
+</script>

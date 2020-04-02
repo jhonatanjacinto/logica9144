@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<h1>Cálculo do Bônus</h1>
+<script>
+
+    var salarioAtual = parseFloat(prompt('Informe o seu salário:').replace(',', '.'))
+    var bonus = parseFloat(prompt('Informe o Bônus:').replace(',', '.'))
+    var salarioNovo = salarioAtual + bonus 
+    document.write(`
+        Novo salário: R$ ${salarioNovo}
+    `)
+
+</script>

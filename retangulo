@@ -1,0 +1,12 @@
+Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), calcular e escrever a área do retângulo.
+
+Informações necessárias: 
+    1) valor da base (float)
+    2) valor da altura (float)
+
+Passo a passo:
+    1) pedir o valor da base (x)
+    2) pedir o valor da altura (x)
+    3) calcular a área: base x altura (x)
+    4) exibir o resultado:
+        A área do retângulo é: X,X

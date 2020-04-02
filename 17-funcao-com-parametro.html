@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<h1>Função com Parâmetro | Confeitaria</h1>
+
+<button onclick="fazerBolo('Chocolate', 'Caramelo')">
+    Quero o bolo de chocolate
+</button>
+
+<button onclick="fazerBolo('Laranja', 'Morango')">
+    Quero o bolo de laranja
+</button>
+
+<button onclick="fazerBolo('Fubá')">
+    Quero o bolo de fubá
+</button>
+
+<script>
+
+    function fazerBolo(sabor, cobertura = 'Coco') {
+        document.write(`Aqui está seu bolo de ${sabor} com cobertura de ${cobertura}... <br>`)
+    }
+
+</script>

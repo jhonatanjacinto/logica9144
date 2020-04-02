@@ -1,0 +1,14 @@
+Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. A fórmula para o cálculo da média final é:
+
+    media final = (nota1 x 2 + nota2 x 3 + nota3 x 5) / 10
+
+    Exibir:
+        Sua média final é: X,X
+
+    Passo a passo:
+        1) Pedir a nota 1 (float)
+        2) Pedir a nota 2
+        3) Pedir a nota 3
+        4) Calcular a média: (nota1 x 2 + nota2 x 3 + nota3 x 5) / 10
+        5) Exibir o resultado
+

@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<h1>Salário Novo</h1>
+<script>
+
+    var salario = parseFloat(prompt('Digite seu salário:').replace(',', '.'))
+    var reajuste = parseInt(prompt('Digite o reajuste:').replace(',', '.'))
+    var valorReajuste = salario * (reajuste / 100)
+    var salarioFinal = salario + valorReajuste
+    document.write(`
+        Seu salário novo é: R$ ${salarioFinal.toFixed(2).replace('.', ',')}
+    `)
+
+</script>

@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<h1>Login</h1>
+
+Usuário: <br>
+<input type="text" id="campoUsuario">
+<br><br>
+
+Senha: <br>
+<input type="password" id="campoSenha">
+<br><br>
+
+<button onclick="entrar()">
+    Entrar
+</button>
+
+<script>
+
+    function entrar() {
+        var usuario = campoUsuario.value
+        var senha = campoSenha.value
+
+        if (usuario == 'caelum' && senha == 'wd01') {
+            document.write('Login realizado com sucesso!')
+        }
+        else {
+            alert('Dados inválidos. Tente novamente!')
+            campoUsuario.value = ''
+            campoSenha.value = ''
+            campoUsuario.focus()
+        }
+    }
+
+    // habilita o Enter na execução da função "entrar()"
+    document.onkeypress = event => {
+        if (event.key === 'Enter') {
+            entrar()
+        }
+    }
+
+
+</script>

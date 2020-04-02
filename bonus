@@ -1,0 +1,11 @@
+Crie um algoritmo que peça o salário de um funcionário e o valor do bônus a ser
+recebido (em reais). Calcule e exiba o novo salário da seguinte forma:
+
+    Novo salário: R$ XXX.XX 
+
+    Salário Novo = Salário Atual + Bônus
+
+    1) Pedir o Salário Atual (x)
+    2) Pedir o Bônus (x)
+    3) Calcular o Salário Novo (x)
+    4) Exibir o Salário Novo

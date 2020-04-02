@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<h1>Lista de Supermercado</h1>
+
+<p>Utilize o formulário abaixo para criar sua lista de compras:</p>
+
+Nome do Item: <br>
+<input type="text" id="campoItem">
+<button onclick="adicionarNaLista()">
+    Adicionar na Lista
+</button>
+
+<p id="mostrador">
+    Sua lista está vazia no momento :/
+</p>
+
+<script>
+
+    var lista = []
+
+    function adicionarNaLista()
+    {
+        var item = campoItem.value
+
+        if (item.trim() === '' || isNaN(item) === false) {
+            alert('Por favor, preencha o campo com um item válido!')
+        }
+        else {
+            lista.push(item)
+            mostrador.innerHTML = (`
+                Sua lista de supermercado tem ${lista.length} item(ns): <br>
+                ${lista.join('<br>')}
+            `)
+        }
+        
+        campoItem.value = ""
+        campoItem.focus()
+    }
+
+    document.onkeypress = event => {
+        if (event.key === 'Enter') {
+            adicionarNaLista()
+        }
+    }
+
+</script>

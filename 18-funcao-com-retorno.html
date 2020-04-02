@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<h1>Função com retorno</h1>
+<script>
+
+    // valor = 17.58968
+    // retornar = R$ 17,59
+    function converterEmMoeda(valor)
+    {
+        var moeda = parseFloat(valor).toFixed(2).replace('.', ',')
+        return "R$ " + moeda
+    }
+
+    converterEmMoeda(20.9985)
+    var valorConvertido = converterEmMoeda(17.58968);
+    alert(valorConvertido)
+    document.write(valorConvertido)
+    alert(converterEmMoeda(19.2635))
+
+
+</script>
